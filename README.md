@@ -3,14 +3,14 @@ Symfony2 Excel bundle
 
 This bundle permits you to create, modify and read excel objects.
 
-[![Build Status](https://travis-ci.org/liuggio/ExcelBundle.png)](https://travis-ci.org/liuggio/ExcelBundle)
-[![Total Downloads](https://poser.pugx.org/liuggio/ExcelBundle/downloads.png)](https://packagist.org/packages/liuggio/ExcelBundle)
-[![Latest Stable Version](https://poser.pugx.org/liuggio/ExcelBundle/v/stable.png)](https://packagist.org/packages/liuggio/ExcelBundle)
-[![Latest Unstable Version](https://poser.pugx.org/liuggio/ExcelBundle/v/unstable.png)](https://packagist.org/packages/liuggio/ExcelBundle)
+[![Build Status](https://travis-ci.org/fungio/ExcelBundle.png)](https://travis-ci.org/fungio/ExcelBundle)
+[![Total Downloads](https://poser.pugx.org/fungio/ExcelBundle/downloads.png)](https://packagist.org/packages/fungio/ExcelBundle)
+[![Latest Stable Version](https://poser.pugx.org/fungio/ExcelBundle/v/stable.png)](https://packagist.org/packages/fungio/ExcelBundle)
+[![Latest Unstable Version](https://poser.pugx.org/fungio/ExcelBundle/v/unstable.png)](https://packagist.org/packages/fungio/ExcelBundle)
 
 ## License
 
-[![License](https://poser.pugx.org/liuggio/ExcelBundle/license.png)](LICENSE)
+[![License](https://poser.pugx.org/fungio/ExcelBundle/license.png)](LICENSE)
 
 
 ## Version 2
@@ -21,8 +21,8 @@ There is a big BC with the 1.* version, but **unit tests**, **functional tests**
 ### Version 1.*
 
 If you have installed an old version, and you are happy to use it, you could find documentation and files
-in the [tag v1.0.6](https://github.com/liuggio/ExcelBundle/releases/tag/v1.0.6),
-[browse the code](https://github.com/liuggio/ExcelBundle/tree/cf0ecbeea411d7c3bdc8abab14c3407afdf530c4).
+in the [tag v1.0.6](https://github.com/fungio/ExcelBundle/releases/tag/v1.0.6),
+[browse the code](https://github.com/fungio/ExcelBundle/tree/cf0ecbeea411d7c3bdc8abab14c3407afdf530c4).
 
 ### Things to know:
 
@@ -34,7 +34,7 @@ I encourage you to use the built-in function for csv: http://php.net/manual-look
 **1**  Add to composer.json to the `require` key
 
 ``` shell
-    $composer require liuggio/excelbundle
+    $composer require fungio/excelbundle
 ``` 
 
 **2** Register the bundle in ``app/AppKernel.php``
@@ -42,7 +42,7 @@ I encourage you to use the built-in function for csv: http://php.net/manual-look
 ``` php
     $bundles = array(
         // ...
-        new Liuggio\ExcelBundle\LiuggioExcelBundle(),
+        new Fungio\ExcelBundle\FungioExcelBundle(),
     );
 ```
 
@@ -130,7 +130,7 @@ class DefaultController extends Controller
         // ask the service for a Excel5
        $phpExcelObject = $this->get('phpexcel')->createPHPExcelObject();
 
-       $phpExcelObject->getProperties()->setCreator("liuggio")
+       $phpExcelObject->getProperties()->setCreator("fungio")
            ->setLastModifiedBy("Giulio De Donato")
            ->setTitle("Office 2005 XLSX Test Document")
            ->setSubject("Office 2005 XLSX Test Document")
@@ -165,7 +165,7 @@ class DefaultController extends Controller
 
 ## Contributors
 
-the [list of contributors](https://github.com/liuggio/ExcelBundle/graphs/contributors)
+the [list of contributors](https://github.com/fungio/ExcelBundle/graphs/contributors)
 
 ## Contribute
 

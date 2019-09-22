@@ -1,6 +1,6 @@
 <?php
 
-namespace Liuggio\ExcelBundle\DependencyInjection;
+namespace Fungio\ExcelBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class LiuggioExcelExtension extends Extension
+class FungioExcelExtension extends Extension
 {
     /**
      * {@inheritDoc}

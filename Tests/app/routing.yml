@@ -1,15 +1,15 @@
 fake_route_stream:
     path:      /fake/stream
-    defaults:  { _controller: LiuggioExcelBundle:Fake:stream }
+    defaults:  { _controller: FungioExcelBundle:Fake:stream }
 
 fake_route_store:
     path:      /fake/store
-    defaults:  { _controller: LiuggioExcelBundle:Fake:store }
+    defaults:  { _controller: FungioExcelBundle:Fake:store }
 
 fake_route_reader:
     path:      /fake/reader
-    defaults:  { _controller: LiuggioExcelBundle:Fake:reader }
+    defaults:  { _controller: FungioExcelBundle:Fake:reader }
 
 fake_route_read:
     path:      /fake/read
-    defaults:  { _controller: LiuggioExcelBundle:Fake:readAndSave }
+    defaults:  { _controller: FungioExcelBundle:Fake:readAndSave }

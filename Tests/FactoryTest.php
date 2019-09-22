@@ -1,8 +1,8 @@
 <?php
 
-namespace Liuggio\ExcelBundle\Tests;
+namespace Fungio\ExcelBundle\Tests;
 
-use Liuggio\ExcelBundle\Factory;
+use Fungio\ExcelBundle\Factory;
 
 class FactoryTest extends \PHPUnit_Framework_TestCase
 {

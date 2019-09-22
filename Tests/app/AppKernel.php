@@ -12,7 +12,7 @@ class AppKernel extends Kernel
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             // My Bundle to test
-            new Liuggio\ExcelBundle\LiuggioExcelBundle(),
+            new Fungio\ExcelBundle\FungioExcelBundle(),
         );
 
         return $bundles;

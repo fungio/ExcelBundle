@@ -1,6 +1,6 @@
 <?php
 
-namespace  Liuggio\ExcelBundle\Controller;
+namespace  Fungio\ExcelBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Response;
@@ -41,7 +41,7 @@ class FakeController extends Controller
     {
         $filename = $this->container->getParameter('xls_fixture_absolute_path');
         // load the factory
-        /** @var \Liuggio\ExcelBundle\Factory $reader */
+        /** @var \Fungio\ExcelBundle\Factory $reader */
         $factory = $this->get('phpexcel');
         // create a reader
         /** @var \PHPExcel_Reader_IReader $reader */
@@ -86,7 +86,7 @@ class FakeController extends Controller
 
         $htmlHelper = $this->get('phpexcel')->createHelperHTML();
 
-        $phpExcelObject->getProperties()->setCreator("liuggio")
+        $phpExcelObject->getProperties()->setCreator("fungio")
             ->setLastModifiedBy("Giulio De Donato")
             ->setTitle("Office 2005 XLSX Test Document")
             ->setSubject("Office 2005 XLSX Test Document")

@@ -1,5 +1,5 @@
 {
-    "name": "liuggio/excelbundle",
+    "name": "fungio/excelbundle",
     "description": "This is a Symfony2 Bundle helps you to read and write Excel files (including pdf, xlsx, odt), thanks to the PHPExcel library",
     "type": "symfony-bundle",
     "authors": [
@@ -8,8 +8,17 @@
             "email": "liuggio@gmail.com"
         },
         {
+            "name": "Pierrick Aubin",
+            "email": "pierrick.aubin@gmail.com",
+            "role": "Developer"
+        },
+        {
             "name": "ExcelBundle Contributors",
             "homepage": "https://github.com/liuggio/ExcelBundle#contributors"
+        },
+        {
+            "name": "ExcelBundle's fork contributors",
+            "homepage": "https://github.com/fungio/ExcelBundle#contributors"
         }
     ],
 
@@ -33,12 +42,12 @@
     "autoload": {
         "exclude-from-classmap": ["/Tests/"],
         "psr-4": {
-            "Liuggio\\ExcelBundle\\": ""
+            "Fungio\\ExcelBundle\\": ""
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Liuggio\\ExcelBundle\\": ""
+            "Fungio\\ExcelBundle\\": ""
         }
     },
     
