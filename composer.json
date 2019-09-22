@@ -1,5 +1,5 @@
 {
-    "name": "fungio/excelbundle",
+    "name": "fungio/excel-bundle",
     "description": "This is a Symfony2 Bundle helps you to read and write Excel files (including pdf, xlsx, odt), thanks to the PHPExcel library",
     "type": "symfony-bundle",
     "authors": [
@@ -41,16 +41,15 @@
     },
     "autoload": {
         "exclude-from-classmap": ["/Tests/"],
-        "psr-4": {
-            "Fungio\\ExcelBundle\\": ""
-        }
+        "psr-4": { "Fungio\\ExcelBundle\\": "" },
+        "psr-0": { "Fungio\\ExcelBundle": "" }
     },
     "autoload-dev": {
         "psr-4": {
             "Fungio\\ExcelBundle\\": ""
         }
     },
-    
+    "target-dir": "Fungio/ExcelBundle",
     "extra": {
         "branch-alias": {
             "dev-master": "2.0.x-dev"
