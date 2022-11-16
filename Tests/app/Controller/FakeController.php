@@ -49,7 +49,7 @@ class FakeController extends Controller
         // check that the file can be read
         $canread = $reader->canRead($filename);
         // check that an empty temporary file cannot be read
-        $someFile = tempnam($this->getParameter('kernel.root_dir'), "tmp");
+        $someFile = tempnam($this->getParameter('kernel.project_dir'), "tmp");
         $cannotread = $reader->canRead($someFile);
         unlink($someFile);
         // load the excel file
